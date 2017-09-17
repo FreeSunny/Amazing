@@ -16,7 +16,8 @@
 
 - 手指拖动View移动， 如果背景是SurfaceView，需要改下布局边界
 - [Code1](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/MoveActivity.java)
-- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/Move2Activity.java)
+- [Code2](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/Move2Activity
+.java)
 
 ##Anim sample
 
