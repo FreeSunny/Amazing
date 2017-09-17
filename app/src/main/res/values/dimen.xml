@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="outSize">20sp</dimen>
+    <dimen name="inSize">16sp</dimen>
+    <dimen name="rtc_score_bar_width">6dp</dimen>
+    <dimen name="rtc_score_bar_inner">-2dp</dimen>
+    <!--equal abs rtc_score_bar_inner size-->
+    <dimen name="rtc_score_bar_over">2dp</dimen>
+</resources>

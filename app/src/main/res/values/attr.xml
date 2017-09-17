@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StrokeTextView">
+        <attr name="out_color" format="reference|color"></attr>
+        <attr name="inner_color" format="reference|color"></attr>
+        <attr name="draw_border" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScaleTextView">
+        <attr name="o_color" format="reference|color"></attr>
+        <attr name="i_color" format="reference|color"></attr>
+        <attr name="is_border" format="boolean"></attr>
+        <attr name="text_size" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="FlowerGiftView">
+        <attr name="left_to_right" format="boolean"></attr>
+        <attr name="gift_desc" format="reference|string"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="FallDownView">
+        <attr name="fall_down_image" format="reference"></attr>
+        <attr name="fall_down_count" format="integer"></attr>
+        <attr name="fall_down_kind" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="DragFrameLayout">
+        <attr name="margin_edge" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="RtcScoreBar">
+        <attr name="width" format="dimension"></attr>
+        <attr name="over_size" format="dimension"></attr>
+        <attr name="pk1_color" format="reference"></attr>
+        <attr name="pk2_color" format="reference"></attr>
+
+    </declare-styleable>
+</resources>

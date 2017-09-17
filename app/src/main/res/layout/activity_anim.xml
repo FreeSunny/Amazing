@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.demo.example.activity.AnimActivity">
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"/>
+
+    <com.demo.example.widget.FlowerGiftView
+        android:id="@+id/right_gift_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rtc_flowers_right"
+        android:gravity="center"
+        android:paddingLeft="11dp"
+        android:visibility="invisible"
+        app:gift_desc="送出花"></com.demo.example.widget.FlowerGiftView>
+
+    <com.demo.example.widget.FlowerGiftView
+        android:id="@+id/left_gift_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rtc_flowers_left"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:visibility="invisible"
+        app:gift_desc="收到花"
+        app:left_to_right="true"></com.demo.example.widget.FlowerGiftView>
+
+</LinearLayout>

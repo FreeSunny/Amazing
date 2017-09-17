@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#fcf7aa04</color>
+    <color name="color_ffa800">#ffa800</color>
+    <color name="color_ffd200">#ffd200</color>
+    <color name="color_trans">#00000000</color>
+
+    <!--rtc-->
+    <color name="rtc_color_672866">#672866</color>
+    <color name="rtc_color_22a718">#22a718</color>
+    <color name="rtc_color_2c8ee9">#2c8ee9</color>
+    <color name="rtc_color_3bddc0">#3bddc0</color>
+    <color name="rtc_pk1_color">#c2ff61</color>
+    <color name="rtc_pk2_color">#4b53ff</color>
+</resources>
