@@ -34,7 +34,7 @@ public class EnterActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.go_to_main:
-                MainActivity.start(this);
+                OpenGLActivity.start(this);
                 break;
             case R.id.go_to_camera:
                 CameraActivity.start(this);

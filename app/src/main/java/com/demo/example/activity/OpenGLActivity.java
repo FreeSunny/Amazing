@@ -7,10 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.demo.example.widget.MyGLSurfaceView;
 
-public class MainActivity extends AppCompatActivity {
+public class OpenGLActivity extends AppCompatActivity {
 
     public static void start(Context context) {
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, OpenGLActivity.class);
         context.startActivity(intent);
     }
 

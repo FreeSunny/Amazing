@@ -45,7 +45,7 @@ public class BroadCastActivity extends AppCompatActivity implements View.OnClick
         switch (v.getId()) {
             case R.id.send_bc: {
                 Intent intent = new Intent();
-                intent.setAction("im.yixin.sdk.Intent.ACTION_HANDLE_APP_UNREGISTER");
+                intent.setAction("im.xxx.sdk.Intent.ACTION_HANDLE_APP_UNREGISTER");
                 intent.putExtra("this_is_a_random_serializable_extra_for_test_general_reject_server", new
                         SerializableObject());
                 sendBroadcast(intent);
@@ -54,7 +54,7 @@ public class BroadCastActivity extends AppCompatActivity implements View.OnClick
             case R.id.send_share: {
                 Intent intent = new Intent();
                 intent.setAction("android.intent.action.SEND");
-                intent.setComponent(new ComponentName("im.yixin", "im.yixin.activity.share.ShareToSessionActivity"));
+                intent.setComponent(new ComponentName("im.xxx", "im.xxx.activity.share.ShareToSessionActivity"));
                 intent.putExtra("android.intent.extra.TEXT", "*+./:-%&\"");
                 intent.putExtra("this_is_a_random_serializable_extra_for_test_general_reject_server", new
                         SerializableObject());

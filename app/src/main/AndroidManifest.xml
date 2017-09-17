@@ -28,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.demo.example.activity.MainActivity">
+        <activity android:name="com.demo.example.activity.OpenGLActivity">
         </activity>
         <activity android:name="com.demo.example.activity.CameraActivity">
         </activity>
