@@ -12,11 +12,11 @@ import com.demo.example.R;
  * Created by hzsunyj on 2017/9/26.
  */
 
-public class ScanActivity extends Activity {
+public class ScanFaceActivity extends Activity {
 
     public static void start(Context context) {
         Intent intent = new Intent();
-        intent.setClass(context, ScanActivity.class);
+        intent.setClass(context, ScanFaceActivity.class);
         context.startActivity(intent);
     }
 

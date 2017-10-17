@@ -58,7 +58,7 @@
             android:theme="@style/FullScreen">
         </activity>
         <activity
-            android:name="com.demo.example.activity.ScanActivity"
+            android:name="com.demo.example.activity.ScanFaceActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreen">
         </activity>

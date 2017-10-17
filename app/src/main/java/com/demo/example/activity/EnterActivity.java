@@ -70,7 +70,7 @@ public class EnterActivity extends AppCompatActivity {
         list.add(new EnterData("WSTestActivity", WSTestActivity.class));
         list.add(new EnterData("ScreenRecordActivity", ScreenRecordActivity.class));
         list.add(new EnterData("ConstraintActivity", ConstraintActivity.class));
-        list.add(new EnterData("ScanActivity", ScanActivity.class));
+        list.add(new EnterData("ScanFaceActivity", ScanFaceActivity.class));
     }
 
 }

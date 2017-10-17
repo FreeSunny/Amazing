@@ -21,7 +21,7 @@
 ##Anim sample
 
 - Android 送花动画，有叠加效果
-- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/AnimActivity.java)
+- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/SendFlowersActivity.java)
 
 ##Fall Down View sample
 
@@ -59,3 +59,16 @@
 - 系统新的布局控件使用样例，主要如果你的Activity继承自Activity，布局中的ImageView需要使用src属性来指定图片，如果继承自
 AppCompatActivity，ImageView可以采用两种方式指定图片，src属性与app:srcCompat属性，系统拖拽默认app:srcCompat
 - [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/ConstraintActivity.java)
+
+##scan sample
+
+- 不规则图片扫描效果，还未完成
+- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/ScanFaceActivity.java)
+
+
+*******************************************************************************
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
