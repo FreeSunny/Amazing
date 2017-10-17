@@ -34,4 +34,15 @@
         <attr name="pk2_color" format="reference"></attr>
 
     </declare-styleable>
+
+    <declare-styleable name="Vector">
+        <attr name="viewportHeight" format="float"></attr>
+        <attr name="viewportWidth" format="float"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerTextView">
+        <attr name="auto_start" format="boolean"></attr>
+        <attr name="start_color" format="reference|color"></attr>
+        <attr name="end_color" format="reference|color"></attr>
+    </declare-styleable>
 </resources>

@@ -1,4 +1,4 @@
-package com.demo.example.mode;
+package com.demo.example.bean;
 
 import android.opengl.GLES20;
 

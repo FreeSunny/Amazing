@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.demo.example.activity.AnimActivity">
+    tools:context="com.demo.example.activity.SendFlowersActivity">
 
     <Button
         android:id="@+id/record"

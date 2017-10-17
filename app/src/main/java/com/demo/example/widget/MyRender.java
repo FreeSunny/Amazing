@@ -4,8 +4,8 @@ import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 
-import com.demo.example.mode.Square;
-import com.demo.example.mode.Triangle;
+import com.demo.example.bean.Square;
+import com.demo.example.bean.Triangle;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;

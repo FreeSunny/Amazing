@@ -10,12 +10,12 @@ import android.view.View;
 import com.demo.example.R;
 import com.demo.example.widget.FlowerGiftView;
 
-public class AnimActivity extends AppCompatActivity implements View.OnClickListener {
+public class SendFlowersActivity extends AppCompatActivity implements View.OnClickListener {
 
     private FlowerGiftView flowerGiftView;
 
     public static void start(Context context) {
-        Intent intent = new Intent(context, AnimActivity.class);
+        Intent intent = new Intent(context, SendFlowersActivity.class);
         context.startActivity(intent);
     }
 

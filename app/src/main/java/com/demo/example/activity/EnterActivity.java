@@ -1,74 +1,76 @@
 package com.demo.example.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DividerItemDecoration;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.demo.example.R;
+import com.demo.example.adpter.BaseAdapter;
+import com.demo.example.adpter.EnterDelegate;
+import com.demo.example.adpter.OnItemClickListener;
+import com.demo.example.model.EnterData;
 
-public class EnterActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
+
+public class EnterActivity extends AppCompatActivity {
+
+    private RecyclerView activityList;
+
+    private ArrayList<EnterData> list;
+
+    private void findViews() {
+        activityList = findViewById(R.id.activity_list);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter);
-        setViewListener();
+        findViews();
+        initRV();
     }
 
-    private void setViewListener() {
-        findViewById(R.id.go_to_main).setOnClickListener(this);
-        findViewById(R.id.go_to_camera).setOnClickListener(this);
-        findViewById(R.id.go_to_move).setOnClickListener(this);
-        findViewById(R.id.go_to_move2).setOnClickListener(this);
-        findViewById(R.id.go_to_anim).setOnClickListener(this);
-        findViewById(R.id.go_to_fall).setOnClickListener(this);
-        findViewById(R.id.go_to_fading).setOnClickListener(this);
-        findViewById(R.id.go_to_bc).setOnClickListener(this);
-        findViewById(R.id.go_to_lottie).setOnClickListener(this);
-        findViewById(R.id.go_to_ws).setOnClickListener(this);
-        findViewById(R.id.go_to_rd).setOnClickListener(this);
-        findViewById(R.id.go_to_constraint).setOnClickListener(this);
+    private void initRV() {
+        preloadData();
+        activityList.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
+        activityList.setLayoutManager(new LinearLayoutManager(this));
+        activityList.setAdapter(new BaseAdapter(list, new EnterDelegate(), new OnItemClickListener<EnterData>() {
+            @Override
+            public void onClick(View v, EnterData data) {
+                onClickData(data);
+            }
+
+            @Override
+            public boolean onLongClick(View v, EnterData data) {
+                return false;
+            }
+        }));
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.go_to_main:
-                OpenGLActivity.start(this);
-                break;
-            case R.id.go_to_camera:
-                CameraActivity.start(this);
-                break;
-            case R.id.go_to_move:
-                MoveActivity.start(this);
-                break;
-            case R.id.go_to_move2:
-                Move2Activity.start(this);
-                break;
-            case R.id.go_to_anim:
-                AnimActivity.start(this);
-                break;
-            case R.id.go_to_fall:
-                FallDownActivity.start(this);
-                break;
-            case R.id.go_to_fading:
-                FadingActivity.start(this);
-                break;
-            case R.id.go_to_bc:
-                BroadCastActivity.start(this);
-                break;
-            case R.id.go_to_lottie:
-                LottieActivity.start(this);
-                break;
-            case R.id.go_to_ws:
-                WSTestActivity.start(this);
-                break;
-            case R.id.go_to_rd:
-                ScreenRecordActivity.start(this);
-                break;
-            case R.id.go_to_constraint:
-                ConstraintActivity.start(this);
-                break;
-        }
+    private void onClickData(EnterData data) {
+        Intent intent = new Intent(this, data.clazz);
+        this.startActivity(intent);
     }
+
+    private void preloadData() {
+        list = new ArrayList<>();
+        list.add(new EnterData("OpenGLActivity", OpenGLActivity.class));
+        list.add(new EnterData("CameraActivity", CameraActivity.class));
+        list.add(new EnterData("MoveActivity", MoveActivity.class));
+        list.add(new EnterData("Move2Activity", Move2Activity.class));
+        list.add(new EnterData("SendFlowersActivity", SendFlowersActivity.class));
+        list.add(new EnterData("FallDownActivity", FallDownActivity.class));
+        list.add(new EnterData("FadingActivity", FadingActivity.class));
+        list.add(new EnterData("BroadCastActivity", BroadCastActivity.class));
+        list.add(new EnterData("LottieActivity", LottieActivity.class));
+        list.add(new EnterData("WSTestActivity", WSTestActivity.class));
+        list.add(new EnterData("ScreenRecordActivity", ScreenRecordActivity.class));
+        list.add(new EnterData("ConstraintActivity", ConstraintActivity.class));
+        list.add(new EnterData("ScanActivity", ScanActivity.class));
+    }
+
 }

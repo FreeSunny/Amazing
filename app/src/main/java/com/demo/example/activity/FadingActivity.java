@@ -1,17 +1,15 @@
 package com.demo.example.activity;
 
-import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 
 import com.demo.example.R;
@@ -49,7 +47,6 @@ public class FadingActivity extends AppCompatActivity {
     private void init() {
         paint = new Paint();
         paint.setAntiAlias(true);
-        //paint.setShader(new LinearGradient())
     }
 
     private void findViews() {
@@ -58,65 +55,9 @@ public class FadingActivity extends AppCompatActivity {
 
     private void setViewsListener() {
         getDatas();
-        LinearLayoutManager layout = new LinearLayoutManager(this);
+        GridLayoutManager layout = new GridLayoutManager(this, 5);
         recyclerView.setLayoutManager(layout);
         recyclerView.setAdapter(new DataAdapter());
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                //onScroll(recyclerView, dx, dy);
-            }
-        });
-    }
-
-    private void alphaTween() {
-        AlphaAnimation alpha = new AlphaAnimation(1.0f, 0.0f);
-        alpha.setDuration(300);
-        imageView.startAnimation(alpha);
-    }
-
-    private void alphaOB() {
-        ObjectAnimator animator = ObjectAnimator.ofFloat(imageView, "alpha", 1.0f, 0.0f).setDuration(300);
-        animator.start();
-    }
-
-    int lastPos = 0;
-
-    int offsetY = 0;
-
-    private void onScroll(RecyclerView recyclerView, int dx, int dy) {
-        if (!(recyclerView.getLayoutManager() instanceof LinearLayoutManager)) {
-            return;
-        }
-        LinearLayoutManager manager = (LinearLayoutManager) recyclerView.getLayoutManager();
-        int firstPos = manager.findFirstVisibleItemPosition();
-        if (firstPos != lastPos) {// reset
-            setItemAlpha(recyclerView, 0, lastPos);
-            lastPos = firstPos;
-            offsetY = 0;
-        }
-        offsetY += dy;
-        setItemAlpha(recyclerView, offsetY, firstPos);
-    }
-
-    private void setItemAlpha(RecyclerView recyclerView, int allDy, int pos) {
-        DataAdapter.DataViewHolder holder = (DataAdapter.DataViewHolder) recyclerView
-                .findViewHolderForAdapterPosition(pos);
-        if (holder == null) {
-            return;
-        }
-        View itemView = holder.itemView;
-        float alpha = 1.0f;
-        if (allDy != 0) {
-            int height = itemView.getHeight();
-            if (allDy > 0) {
-                alpha = (float) ((height - allDy) * 1.0 / height);
-            } else {
-                alpha = (float) (Math.abs(allDy) * 1.0 / height);
-            }
-        }
-        holder.textView.setFading(alpha);
     }
 
     public List<String> getDatas() {
