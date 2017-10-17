@@ -11,16 +11,6 @@
     <com.demo.example.widget.ScanView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"/>
-
-    <com.demo.example.widget.ShimmerTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="我爱北京天安门"
-        android:textSize="25sp"
-        app:auto_start="true"/>
+        android:visibility="visible"/>
 
 </FrameLayout>

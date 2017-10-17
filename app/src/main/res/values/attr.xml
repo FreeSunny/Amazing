@@ -44,5 +44,6 @@
         <attr name="auto_start" format="boolean"></attr>
         <attr name="start_color" format="reference|color"></attr>
         <attr name="end_color" format="reference|color"></attr>
+        <attr name="direction" format="boolean"></attr>
     </declare-styleable>
 </resources>

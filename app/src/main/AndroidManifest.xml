@@ -21,46 +21,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.demo.example.activity.EnterActivity">
+        <activity android:name=".activity.EnterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.demo.example.activity.OpenGLActivity">
+        <activity android:name=".activity.OpenGLActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.CameraActivity">
+        <activity android:name=".activity.CameraActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.MoveActivity">
+        <activity android:name=".activity.MoveActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.Move2Activity">
+        <activity android:name=".activity.Move2Activity">
         </activity>
-        <activity android:name="com.demo.example.activity.SendFlowersActivity">
+        <activity android:name=".activity.SendFlowersActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.FallDownActivity">
+        <activity android:name=".activity.FallDownActivity">
         </activity>
         <activity
-            android:name="com.demo.example.activity.FadingActivity"
+            android:name=".activity.FadingActivity"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name="com.demo.example.activity.BroadCastActivity">
+        <activity android:name=".activity.BroadCastActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.LottieActivity">
+        <activity android:name=".activity.LottieActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.WSTestActivity">
+        <activity android:name=".activity.WSTestActivity">
         </activity>
-        <activity android:name="com.demo.example.activity.ScreenRecordActivity">
+        <activity android:name=".activity.ScreenRecordActivity">
         </activity>
         <activity
-            android:name="com.demo.example.activity.ConstraintActivity"
+            android:name=".activity.ConstraintActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreen">
         </activity>
         <activity
-            android:name="com.demo.example.activity.ScanFaceActivity"
+            android:name=".activity.ScanFaceActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreen">
+        </activity>
+        <activity android:name=".activity.ShimmerViewActivity">
         </activity>
     </application>
 

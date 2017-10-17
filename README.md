@@ -65,7 +65,10 @@ AppCompatActivity，ImageView可以采用两种方式指定图片，src属性与
 - 不规则图片扫描效果，还未完成
 - [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/ScanFaceActivity.java)
 
+## Shimmer TextView sample
 
+- 简单版的闪光TextView
+- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/ShimmerViewActivity.java)
 *******************************************************************************
                                  Apache License
                            Version 2.0, January 2004

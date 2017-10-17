@@ -20,14 +20,17 @@ import com.demo.example.R;
 
 public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView {
 
-    public static final int OFFSET_ONE_TIME = 10;
+    public static final int OFFSET_ONE_TIME = 15;
+
     private Paint paint;
 
     private LinearGradient gradient;
 
     private Matrix matrix;
 
-    private int w;
+    private int w, h;
+
+    private boolean horizontal;
 
     private boolean autoStart;
 
@@ -39,7 +42,7 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
 
     private static final int DEFAULT_END_COLOR = 0xFF3455FF;
 
-    private float offsetX = 0;
+    private float offset = 0;
 
     private ValueAnimator animator;
 
@@ -65,6 +68,7 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
         autoStart = array.getBoolean(R.styleable.ShimmerTextView_auto_start, false);
         startColor = array.getColor(R.styleable.ShimmerTextView_start_color, DEFAULT_START_COLOR);
         endColor = array.getColor(R.styleable.ShimmerTextView_end_color, DEFAULT_END_COLOR);
+        horizontal = array.getBoolean(R.styleable.ShimmerTextView_direction, true);
         array.recycle();
     }
 
@@ -72,12 +76,18 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         this.w = w;
+        this.h = h;
         setGradient();
     }
 
     private void setGradient() {
-        gradient = new LinearGradient(0, 0, w, 0, new int[]{startColor, endColor, startColor}, new float[]{0, 0.5f,
-                1.0f}, Shader.TileMode.CLAMP);
+        if (horizontal) {
+            gradient = new LinearGradient(0, 0, w, 0, new int[]{startColor, endColor, startColor}, new float[]{0,
+                    0.5f, 1.0f}, Shader.TileMode.CLAMP);
+        } else {
+            gradient = new LinearGradient(0, 0, 0, h, new int[]{startColor, endColor, startColor}, new float[]{0,
+                    0.5f, 1.0f}, Shader.TileMode.CLAMP);
+        }
         paint.setShader(gradient);
         invalidate();
         if (autoStart) {
@@ -87,6 +97,9 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
 
     public void play() {
         ValueAnimator animator = getAnimator();
+        if (animator.isRunning()) {
+            return;
+        }
         animator.start();
     }
 
@@ -100,9 +113,15 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
             animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
-                    offsetX += OFFSET_ONE_TIME;
-                    if (offsetX > w) {
-                        offsetX = -w;
+                    offset += OFFSET_ONE_TIME;
+                    if (horizontal) {
+                        if (offset > w) {
+                            offset = -w;
+                        }
+                    } else {
+                        if (offset > h) {
+                            offset -= h;
+                        }
                     }
                     invalidate();
                 }
@@ -125,8 +144,14 @@ public class ShimmerTextView extends android.support.v7.widget.AppCompatTextView
     }
 
     @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        reset();
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
-        matrix.setTranslate(offsetX, 0);
+        matrix.setTranslate(offset, 0);
         gradient.setLocalMatrix(matrix);
         super.onDraw(canvas);
     }
