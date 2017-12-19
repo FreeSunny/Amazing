@@ -127,7 +127,7 @@ public class ScreenRecordActivity extends AppCompatActivity implements View.OnCl
 			recorder = new MediaRecorder();
 			recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
 			recorder.setVideoSource(MediaRecorder.VideoSource.SURFACE);
-			recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+			recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
 			recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
 			recorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
 			recorder.setVideoSize(width, height);
@@ -157,7 +157,7 @@ public class ScreenRecordActivity extends AppCompatActivity implements View.OnCl
 		String absolutePath = getExternalCacheDir().getAbsolutePath();
 
 		StringBuilder sb = new StringBuilder();
-		sb.append(absolutePath).append("/cap/").append(time).append(".3gp");
+		sb.append(absolutePath).append("/cap/").append(time).append(".mp4");
 		fileName = sb.toString();
 		File file = new File(fileName);
 		File parentFile = file.getParentFile();

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.demo.example.activity.ShimmerViewActivity">
 
     <com.demo.example.widget.ShimmerTextView
@@ -18,12 +19,25 @@
         android:gravity="center"
         android:text="我爱北京天安门"
         android:textSize="25sp"
-        app:auto_start="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148"/>
+        app:auto_start="true"/>
 
-</android.support.constraint.ConstraintLayout>
+    <com.demo.example.widget.TestTextView
+        android:id="@+id/wrap_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你好"
+        app:tag_name="1"/>
+
+    <com.demo.example.widget.TestTextView
+        android:id="@+id/match_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你好啊"
+        app:tag_name="2"/>
+
+    <com.demo.example.widget.TestTextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="你好a"
+        app:tag_name="3"/>
+</LinearLayout>

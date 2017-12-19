@@ -46,4 +46,8 @@
         <attr name="end_color" format="reference|color"></attr>
         <attr name="direction" format="boolean"></attr>
     </declare-styleable>
+
+    <declare-styleable name="TestTextView">
+        <attr name="tag_name" format="string|reference"></attr>
+    </declare-styleable>
 </resources>

@@ -11,4 +11,8 @@ public class LogUtil {
     public static void e(String msg) {
         Log.e("free", msg);
     }
+
+    public static void d(String tag, String msg) {
+        Log.e("free", msg);
+    }
 }

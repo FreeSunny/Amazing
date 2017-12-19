@@ -72,6 +72,7 @@ public class EnterActivity extends AppCompatActivity {
         list.add(new EnterData("ConstraintActivity", ConstraintActivity.class));
         list.add(new EnterData("ScanFaceActivity", ScanFaceActivity.class));
         list.add(new EnterData("ShimmerViewActivity", ShimmerViewActivity.class));
+        list.add(new EnterData("NestScrollingActivity", NestScrollingActivity.class));
     }
 
 }
