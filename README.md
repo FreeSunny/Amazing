@@ -69,6 +69,15 @@ AppCompatActivity，ImageView可以采用两种方式指定图片，src属性与
 
 - 简单版的闪光TextView
 - [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/ShimmerViewActivity.java)
+
+
+## Nest Scrolling View
+
+- 嵌套滚动可悬浮头部
+- [Code](https://github.com/FreeSunny/Amazing/blob/master/app/src/main/java/com/demo/example/activity/NestScrollingActivity.java)
+
+
+
 *******************************************************************************
                                  Apache License
                            Version 2.0, January 2004
