@@ -5,7 +5,7 @@ android {
     buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "com.demo.opengl"
-        minSdkVersion 14
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -38,6 +38,7 @@ dependencies {
     compile 'com.android.support:support-v4:26.1.0'
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:gridlayout-v7:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.1.0-beta1'
     compile 'com.airbnb.android:lottie:2.2.0'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'

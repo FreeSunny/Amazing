@@ -17,4 +17,46 @@
     <color name="rtc_color_3bddc0">#3bddc0</color>
     <color name="rtc_pk1_color">#c2ff61</color>
     <color name="rtc_pk2_color">#4b53ff</color>
+
+    <color name="_141623">#141623</color>
+    <color name="_202130">#202130</color>
+    <color name="_2c2c41">#2c2c41</color>
+    <color name="_191a26">#191A26</color>
+    <color name="global_bg_color">@color/_202130</color>
+    <color name="global_fg_color">@color/_2c2c41</color>
+    <color name="global_nv_color">@color/_191a26</color>
+
+    <color name="_ff000000">#ff000000</color>
+    <color name="_ff00E8F8">#ff00E8F8</color>
+    <color name="_ff0a0b1b">#ff0a0b1b</color>
+    <color name="_ff303F9F">#ff303F9F</color>
+    <color name="_ff3F51B5">#ff3F51B5</color>
+    <color name="_ffff4081">#ffff4081</color>
+    <color name="_4dffffff">#4dffffff</color>
+    <color name="_80ffffff">#80ffffff</color>
+    <color name="_99ffffff">#99ffffff</color>
+    <color name="_ccffffff">#ccffffff</color>
+    <color name="_b2ffffff">#b2ffffff</color>
+    <color name="_ffffffff">#ffffffff</color>
+    <color name="_f0f0f0">#0a0b1b</color>
+    <color name="_ff141623">#FF141623</color>
+    <color name="_4d000000">#4d000000</color>
+    <color name="_80000000">#80000000</color>
+    <color name="_cc000000">#cc000000</color>
+    <color name="_b2000000">#b2000000</color>
+    <color name="_99000000">#99000000</color>
+    <color name="_0Affffff">#0Affffff</color>
+    <color name="_33ffffff">#33ffffff</color>
+    <color name="white_opacity_004">@color/_0Affffff</color>
+    <color name="white_opacity_20">@color/_33ffffff</color>
+    <color name="white_opacity_30">@color/_4dffffff</color>
+    <color name="white_opacity_50">@color/_80ffffff</color>
+    <color name="white_opacity_60">@color/_99ffffff</color>
+    <color name="white_opacity_70">@color/_b2ffffff</color>
+    <color name="white_opacity_80">@color/_ccffffff</color>
+    <color name="black_opacity_30">@color/_4d000000</color>
+    <color name="black_opacity_50">@color/_80000000</color>
+    <color name="black_opacity_60">@color/_99000000</color>
+    <color name="black_opacity_70">@color/_b2000000</color>
+    <color name="black_opacity_80">@color/_cc000000</color>
 </resources>

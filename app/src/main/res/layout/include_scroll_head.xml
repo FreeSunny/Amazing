@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/feed_detail_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_fg_color"
+    android:paddingBottom="@dimen/dp_size_18"
+    android:paddingLeft="@dimen/dp_size_10"
+    android:paddingRight="@dimen/dp_size_10"
+    android:paddingTop="@dimen/dp_size_18">
+
+    <ImageView
+        android:id="@+id/imageView_head"
+        android:layout_width="@dimen/head_image"
+        android:layout_height="@dimen/head_image"
+        android:src="@drawable/avatar_default_head"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_size_12"
+        android:lines="1"
+        android:text="用户昵称"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_size_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_head"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_role"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:text="描述信息"
+        android:textColor="@color/white_opacity_50"
+        android:textSize="@dimen/sp_size_10"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_head"
+        app:layout_constraintEnd_toEndOf="@+id/textView_name"
+        app:layout_constraintStart_toStartOf="@+id/textView_name"/>
+
+    <TextView
+        android:id="@+id/textView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_size_12"
+        android:text="我是内容，很长很长的内容"
+        android:textColor="@color/white_opacity_80"
+        android:textSize="@dimen/sp_size_14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_head"/>
+
+    <ImageView
+        android:id="@+id/image_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/dp_size_10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beautify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_content"></ImageView>
+
+
+    <TextView
+        android:id="@+id/textView_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:paddingTop="@dimen/dp_size_10"
+        android:text="13.30 我是底部文案"
+        android:textColor="@color/white_opacity_30"
+        android:textSize="@dimen/sp_size_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_content"/>
+
+</android.support.constraint.ConstraintLayout>

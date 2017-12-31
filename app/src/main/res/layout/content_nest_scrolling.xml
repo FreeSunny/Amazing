@@ -16,7 +16,7 @@
         android:id="@+id/data_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/rtc_color_22a718"
+        android:background="@color/global_bg_color"
         android:nestedScrollingEnabled="false"></android.support.v4.view.ViewPager>
 
 </android.support.v4.widget.NestedScrollView>
