@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/global_fg_color"
+    android:background="@color/global_bg_color"
     android:paddingBottom="@dimen/dp_size_18"
     android:paddingLeft="@dimen/dp_size_10"
     android:paddingRight="@dimen/dp_size_10"
@@ -60,7 +60,7 @@
     <ImageView
         android:id="@+id/image_content"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="400dp"
         android:layout_marginTop="@dimen/dp_size_10"
         android:scaleType="centerCrop"
         android:src="@drawable/beautify"

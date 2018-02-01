@@ -12,9 +12,11 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 
 import com.demo.example.R;
 import com.demo.example.fragment.TabFragment;
+import com.demo.example.util.LinkMovement;
 import com.demo.example.util.LogUtil;
 
 
@@ -32,6 +34,8 @@ public class NestScrollingActivity extends AppCompatActivity {
 
     private Handler handler;
 
+    private TextView content;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +52,12 @@ public class NestScrollingActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.nested_scroll_view);
         refreshLayout = findViewById(R.id.refresh_layout);
         appBarLayout = findViewById(R.id.app_bar);
+        content = findViewById(R.id.textView_content);
     }
 
+    /**
+     *
+     */
     private void init() {
         handler = new Handler(getMainLooper());
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
@@ -72,9 +80,12 @@ public class NestScrollingActivity extends AppCompatActivity {
                     public void run() {
                         refreshLayout.setRefreshing(false);
                     }
-                }, 200);
+                }, 500);
             }
         });
+
+        // fix 文本有点击事件会拦截底部事件
+        content.setOnTouchListener(LinkMovement.getInstance());
     }
 
     private class TabAdapter extends FragmentPagerAdapter {
