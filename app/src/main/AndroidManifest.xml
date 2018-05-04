@@ -80,6 +80,8 @@
             android:label="@string/title_activity_tabed"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".activity.FragmentActivity">
+        </activity>
     </application>
 
 </manifest>

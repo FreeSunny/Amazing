@@ -75,6 +75,7 @@ public class EnterActivity extends AppCompatActivity {
         list.add(new EnterData("NestScrollingActivity", NestScrollingActivity.class));
         list.add(new EnterData("ScrollingActivity", ScrollingActivity.class));
         list.add(new EnterData("TabedActivity", TabedActivity.class));
+        list.add(new EnterData("FragmentReplace", FragmentActivity.class));
     }
 
 }

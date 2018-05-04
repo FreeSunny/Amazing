@@ -4,6 +4,7 @@
         <attr name="out_color" format="reference|color"></attr>
         <attr name="inner_color" format="reference|color"></attr>
         <attr name="draw_border" format="boolean"></attr>
+        <attr name="stroke_width" format="dimension"></attr>
     </declare-styleable>
 
     <declare-styleable name="ScaleTextView">

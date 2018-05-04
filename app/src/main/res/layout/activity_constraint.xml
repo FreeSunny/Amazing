@@ -80,7 +80,7 @@
             android:layout_marginTop="46dp"
             android:src="@drawable/rtc_scan_line"
             app:layout_constraintBottom_toBottomOf="@+id/rtc_top_left_icon"
-            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintHorizontal_bias="0.50"
             app:layout_constraintLeft_toRightOf="@+id/rtc_top_left_icon"
             app:layout_constraintRight_toLeftOf="@+id/rtc_top_right_icon"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -92,10 +92,44 @@
             android:layout_marginBottom="0dp"
             android:layout_marginTop="1dp"
             android:src="@drawable/rtc_perfect_icon"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.50"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rtc_top_scan_line"/>
+
+        <com.demo.example.widget.StrokeTextView
+            android:id="@+id/rtc_top_effect_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:text="3"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:draw_border="true"
+            app:inner_color="@color/color_ffa800"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rtc_top_effect"
+            app:layout_constraintTop_toBottomOf="@+id/rtc_top_scan_line"
+            app:out_color="@color/white"
+            app:stroke_width="3dp"/>
+
+        <ImageView
+            android:id="@+id/rtc_top_effect_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rtc_effect_score_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/rtc_effect_score"
+            app:layout_constraintBottom_toBottomOf="@+id/rtc_top_effect"
+            app:layout_constraintEnd_toStartOf="@+id/rtc_top_effect"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <ImageView
             android:id="@+id/rtc_middle_right_up"
@@ -241,10 +275,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:src="@drawable/rtc_best_icon"
+            android:src="@drawable/rtc_perfect_icon"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rtc_music_time_view"/>
+
+        <ImageView
+            android:id="@+id/rtc_bottom_effect_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rtc_2_times"
+            app:layout_constraintBottom_toBottomOf="@+id/rtc_bottom_effect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rtc_bottom_effect"/>
+
+        <ImageView
+            android:id="@+id/rtc_bottom_effect_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rtc_effect_score_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/rtc_effect_score"/>
 
         <ImageView
             android:id="@+id/rtc_middle_right_down"
@@ -301,14 +353,14 @@
             android:id="@+id/src_app_compat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/rtc_battle_music"
-            android:layout_marginRight="142dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginLeft="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="69dp"
-            app:layout_constraintHorizontal_bias="0.965"/>
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="142dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/rtc_battle_music"/>
 
 
     </android.support.constraint.ConstraintLayout>
