@@ -14,7 +14,7 @@
         android:textColor="@color/white"
         android:textSize="12sp"/>
 
-    <com.demo.example.widget.StrokeTextView
+    <com.demo.amazing.widget.StrokeTextView
         android:id="@+id/gift_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

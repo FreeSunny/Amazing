@@ -5,15 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.demo.example.activity.MoveActivity">
+    tools:context="com.demo.amazing.activity.MoveActivity">
 
-    <com.demo.example.widget.DragFrameLayout
+    <com.demo.amazing.widget.DragFrameLayout
         android:id="@+id/move_view"
         android:layout_width="100dp"
         android:layout_height="128dp"
         android:layout_gravity="top|right"
         android:layout_margin="10dp"
-        android:background="@color/colorAccent"></com.demo.example.widget.DragFrameLayout>
+        android:background="@color/colorAccent"></com.demo.amazing.widget.DragFrameLayout>
 
     <View
         android:layout_width="1dp"

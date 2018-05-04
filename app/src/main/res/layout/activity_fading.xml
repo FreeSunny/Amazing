@@ -6,20 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.demo.example.activity.FadingActivity">
+    tools:context="com.demo.amazing.activity.FadingActivity">
 
-    <com.demo.example.widget.FadingPic
+    <com.demo.amazing.widget.FadingPic
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"/>
 
-    <com.demo.example.widget.FadingRecyclerView
+    <com.demo.amazing.widget.FadingRecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:visibility="visible">
 
-    </com.demo.example.widget.FadingRecyclerView>
+    </com.demo.amazing.widget.FadingRecyclerView>
 
 </LinearLayout>

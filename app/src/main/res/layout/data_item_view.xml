@@ -5,7 +5,7 @@
               android:layout_height="wrap_content"
               android:padding="10dp">
 
-    <com.demo.example.widget.FadingTextView
+    <com.demo.amazing.widget.FadingTextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,5 +14,5 @@
         android:textColor="@color/white"
         android:textSize="15sp">
 
-    </com.demo.example.widget.FadingTextView>
+    </com.demo.amazing.widget.FadingTextView>
 </LinearLayout>

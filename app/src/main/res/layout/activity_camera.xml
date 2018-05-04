@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="5"
-    tools:context="com.demo.example.activity.CameraActivity">
+    tools:context="com.demo.amazing.activity.CameraActivity">
 
     <SurfaceView
         android:id="@+id/camera_surface"

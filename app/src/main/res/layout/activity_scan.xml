@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context="com.demo.example.activity.MoveActivity">
+    tools:context="com.demo.amazing.activity.MoveActivity">
 
-    <com.demo.example.widget.ScanView
+    <com.demo.amazing.widget.ScanView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"/>

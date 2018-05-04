@@ -4,7 +4,7 @@
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
-                                             tools:context="com.demo.example.activity.TabedActivity$PlaceholderFragment">
+                                             tools:context="com.demo.amazing.activity.TabedActivity$PlaceholderFragment">
 
     <TextView
         android:id="@+id/section_label"

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="com.demo.example.activity.SendFlowersActivity">
+    tools:context="com.demo.amazing.activity.SendFlowersActivity">
 
     <Button
         android:id="@+id/record"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:text="update"/>
 
-    <com.demo.example.widget.FlowerGiftView
+    <com.demo.amazing.widget.FlowerGiftView
         android:id="@+id/right_gift_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,9 +31,9 @@
         android:gravity="center"
         android:paddingLeft="11dp"
         android:visibility="invisible"
-        app:gift_desc="送出花"></com.demo.example.widget.FlowerGiftView>
+        app:gift_desc="送出花"></com.demo.amazing.widget.FlowerGiftView>
 
-    <com.demo.example.widget.FlowerGiftView
+    <com.demo.amazing.widget.FlowerGiftView
         android:id="@+id/left_gift_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,6 +43,6 @@
         android:paddingLeft="14dp"
         android:visibility="invisible"
         app:gift_desc="收到花"
-        app:left_to_right="true"></com.demo.example.widget.FlowerGiftView>
+        app:left_to_right="true"></com.demo.amazing.widget.FlowerGiftView>
 
 </LinearLayout>

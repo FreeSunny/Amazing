@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.demo.example.activity.ShimmerViewActivity">
+    tools:context="com.demo.amazing.activity.ShimmerViewActivity">
 
-    <com.demo.example.widget.ShimmerTextView
+    <com.demo.amazing.widget.ShimmerTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
